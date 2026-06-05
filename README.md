@@ -1,10 +1,30 @@
-# CapitalTrafficFlow – White House Visitor Access Analysis
+# CapitalTrafficFlow: White House Visitor Access Analysis
 
-## Project Purpose
+## Project Overview
 
-This project analyzes White House WAVES (Worker and Visitor Entry System) access records to uncover visitor traffic patterns, personnel arrival behaviors, facility utilization trends, and temporal access activity. The objective was to transform raw visitor access logs into actionable intelligence through exploratory data analysis, statistical visualization, and traffic pattern assessment.
+CapitalTrafficFlow is a data analytics project focused on analyzing White House WAVES (Worker and Visitor Entry System) access records to uncover visitor traffic patterns, personnel arrival behaviors, facility utilization trends, and temporal access activity.
 
-By examining historical visitor access records, this project demonstrates how government facility access data can be leveraged to support operational planning, security analysis, and resource allocation decisions.
+The project transforms raw visitor access logs into actionable intelligence through exploratory data analysis (EDA), statistical visualization, and traffic pattern assessment. By examining historical visitor access records, the analysis demonstrates how access-control data can support operational planning, security assessment, resource allocation, and facility management.
+
+---
+
+## Business Problem
+
+Large facilities generate substantial access-control data that often remains underutilized. Understanding visitor patterns, workforce behavior, and facility utilization can improve security planning, operational efficiency, and resource allocation.
+
+This project explores whether historical White House access records can reveal meaningful operational patterns that support decision-making and long-term planning.
+
+---
+
+## Project Objectives
+
+* Analyze visitor traffic patterns.
+* Evaluate personnel arrival behaviors.
+* Identify peak traffic periods.
+* Examine facility utilization trends.
+* Investigate access-type distributions.
+* Visualize cumulative traffic behavior.
+* Generate actionable operational insights.
 
 ---
 
@@ -26,30 +46,28 @@ The dataset was cleaned and transformed to support exploratory analysis and visu
 
 ## Methodology
 
-The project followed a structured analytics workflow:
+### 1. Data Collection
 
-### Data Collection
+* Imported White House WAVES access records.
+* Verified data integrity.
+* Examined missing values and inconsistencies.
 
-* Imported White House WAVES access records
-* Verified data integrity
-* Examined missing values and inconsistencies
+### 2. Data Cleaning
 
-### Data Cleaning
+* Standardized date and time fields.
+* Removed invalid records.
+* Formatted categorical variables.
+* Prepared data for visualization.
 
-* Standardized date and time fields
-* Removed invalid records
-* Formatted categorical variables
-* Prepared data for visualization
+### 3. Exploratory Data Analysis (EDA)
 
-### Exploratory Data Analysis (EDA)
+* Daily traffic analysis.
+* Hourly access pattern evaluation.
+* Visitor classification analysis.
+* Meeting room utilization assessment.
+* Personnel arrival trend analysis.
 
-* Daily traffic analysis
-* Hourly access pattern evaluation
-* Visitor classification analysis
-* Meeting room utilization assessment
-* Personnel arrival trend analysis
-
-### Visualization Development
+### 4. Visualization Development
 
 Multiple visualizations were developed to identify:
 
@@ -61,7 +79,7 @@ Multiple visualizations were developed to identify:
 
 ---
 
-# Thought Process
+## Thought Process
 
 The primary objective was to determine whether historical visitor access records could reveal meaningful operational patterns.
 
@@ -73,47 +91,47 @@ Questions explored included:
 * Are visitor arrivals concentrated around specific periods?
 * Can traffic behavior support future planning efforts?
 
-By transforming raw access logs into visual analytics, hidden patterns became significantly easier to interpret and communicate.
+By transforming raw access logs into visual analytics, hidden patterns become significantly easier to interpret and communicate.
 
 ---
 
-# Visual Analysis
+# Visualizations
 
-## Daily Traffic Trend
+## Project Thumbnail
 
-**File:** CapitalTrafficFlowAI.png
+![Capital Traffic Flow AI](visuals/CapitalTrafficFlowAI.png)
 
-This visualization highlights visitor activity over time and identifies fluctuations in access volume. It serves as the primary project visualization and provides a high-level overview of traffic behavior.
+Primary project visualization used throughout the portfolio and repository branding.
 
 ---
 
 ## Daily Access Type Distribution
 
-**File:** daily_access_type_distribution.png
+![Daily Access Type Distribution](visuals/daily_access_type_distribution.png)
 
-Examines the distribution of access classifications and reveals how different visitor categories contribute to overall facility traffic.
+Examines the distribution of visitor access classifications and reveals how different visitor categories contribute to overall facility traffic.
 
 ---
 
 ## Personnel Arrival Times by Day
 
-**File:** personnel_arrival_times_by_day.png
+![Personnel Arrival Times by Day](visuals/personnel_arrival_times_by_day.png)
 
-Analyzes arrival behavior across multiple days and identifies recurring workforce patterns.
+Analyzes workforce arrival behavior across multiple days and identifies recurring arrival patterns and operational schedules.
 
 ---
 
 ## Top 10 Most Visited Meeting Rooms
 
-**File:** top_10_most_visited_meeting_rooms.png
+![Top 10 Most Visited Meeting Rooms](visuals/top_10_most_visited_meeting_rooms.png)
 
-Highlights the most frequently utilized meeting locations and provides insight into facility utilization.
+Highlights the most frequently utilized meeting locations and provides insight into facility utilization patterns.
 
 ---
 
 ## Access Type Frequency
 
-**File:** access_type_frequency.png
+![Access Type Frequency](visuals/access_type_frequency.png)
 
 Displays frequency counts across visitor access categories and personnel classifications.
 
@@ -121,21 +139,21 @@ Displays frequency counts across visitor access categories and personnel classif
 
 ## Cumulative Access Pattern by Hour
 
-**File:** cumulative_access_pattern_by_hour.png
+![Cumulative Access Pattern by Hour](visuals/cumulative_access_pattern_by_hour.png)
 
-Illustrates how access activity accumulates throughout the day and identifies peak operational periods.
+Illustrates how visitor activity accumulates throughout the day and identifies peak operational periods.
 
 ---
 
 ## Histogram of Arrival Times
 
-**File:** histogram_of_arrival_times.png
+![Histogram of Arrival Times](visuals/histogram_of_arrival_times.png)
 
-Provides a statistical view of visitor and personnel arrival distributions.
+Provides a statistical view of visitor and personnel arrival distributions and reveals concentration around specific time periods.
 
 ---
 
-# Key Findings
+## Key Findings
 
 The analysis revealed several important patterns:
 
@@ -148,7 +166,7 @@ The analysis revealed several important patterns:
 
 ---
 
-# Business Impact
+## Business Impact
 
 This project demonstrates how access-control systems can generate valuable operational intelligence.
 
@@ -162,11 +180,17 @@ Potential applications include:
 * Capacity management
 * Operational efficiency monitoring
 
-The methodology can be adapted to government facilities, healthcare environments, manufacturing sites, and corporate campuses.
+The methodology can be adapted to:
+
+* Government facilities
+* Healthcare organizations
+* Manufacturing sites
+* Corporate campuses
+* Research institutions
 
 ---
 
-# Skills Demonstrated
+## Skills Demonstrated
 
 ### Data Science
 
@@ -198,7 +222,18 @@ The methodology can be adapted to government facilities, healthcare environments
 
 ---
 
-# Repository Structure
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
+
+---
+
+## Repository Structure
 
 ```text
 CapitalTrafficFlow/
@@ -208,12 +243,12 @@ CapitalTrafficFlow/
 │
 ├── visuals/
 │   ├── CapitalTrafficFlowAI.png
-│   ├── daily_access_type_distribution.png
-│   ├── personnel_arrival_times_by_day.png
-│   ├── top_10_most_visited_meeting_rooms.png
 │   ├── access_type_frequency.png
 │   ├── cumulative_access_pattern_by_hour.png
-│   └── histogram_of_arrival_times.png
+│   ├── daily_access_type_distribution.png
+│   ├── histogram_of_arrival_times.png
+│   ├── personnel_arrival_times_by_day.png
+│   └── top_10_most_visited_meeting_rooms.png
 │
 ├── data/
 ├── docs/
@@ -224,7 +259,7 @@ CapitalTrafficFlow/
 
 ---
 
-# Installation
+## Installation
 
 Clone the repository:
 
@@ -258,7 +293,7 @@ notebook/CapitalTrafficFlow.ipynb
 
 ---
 
-# Future Improvements
+## Future Improvements
 
 Potential enhancements include:
 
@@ -267,18 +302,17 @@ Potential enhancements include:
 * Machine learning classification
 * Streamlit dashboard deployment
 * Power BI integration
-* Interactive visualization development
+* Interactive visualizations
 * Automated reporting workflows
 
 ---
 
 # Author
 
-## Darious Brown
-
-**PhD Candidate – Artificial Intelligence & Machine Learning**
-**DBA Candidate**
-**Data Scientist | Machine Learning Engineer | AI Researcher**
+**Darious Brown**
+PhD Candidate – Artificial Intelligence & Machine Learning Specialization
+DBA Candidate
+Data Scientist | Machine Learning Engineer | AI Researcher
 
 ### Professional Profiles
 
@@ -290,7 +324,9 @@ Portfolio: https://dare215.github.io/DariousBrown-Portfolio/
 
 Email: [dariousbrown3@icloud.com](mailto:dariousbrown3@icloud.com)
 
-### Areas of Expertise
+---
+
+## Areas of Expertise
 
 * Artificial Intelligence
 * Machine Learning
@@ -303,6 +339,12 @@ Email: [dariousbrown3@icloud.com](mailto:dariousbrown3@icloud.com)
 * Financial Analytics
 * Healthcare Analytics
 * Manufacturing Analytics
+
+---
+
+## About This Portfolio
+
+This repository is part of a larger Artificial Intelligence and Data Science portfolio showcasing machine learning, deep learning, predictive analytics, natural language processing, generative AI, computer vision, forecasting, optimization, and business intelligence projects developed throughout graduate and doctoral studies.
 
 ---
 
